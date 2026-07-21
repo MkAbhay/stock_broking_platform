@@ -60,7 +60,7 @@ try {
   }
 })();
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 logger.info(`Starting server on port ${PORT}...`);
 app.listen(PORT, () => {

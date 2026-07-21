@@ -1,5 +1,5 @@
 const { logger } = require("./logger");
-const { CustomError } = require("../helpers/CustomError");
+const { CustomError } = require("./CustomError");
 
 const initDB = async (db) => {
   try {

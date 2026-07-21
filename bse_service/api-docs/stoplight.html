@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>BSE API Docs</title>
+    <script src="https://unpkg.com/@stoplight/elements/web-components.min.js"></script>
+    <link
+      href="https://unpkg.com/@stoplight/elements/styles.min.css"
+      rel="stylesheet"
+    />
+    <!-- below code block is for dark mode remove if want them white -->
+    <script defer>
+      const darkMode = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+      document.documentElement.dataset.theme = darkMode ? "dark" : "light";
+      document.documentElement.style.colorScheme = darkMode ? "dark" : "light";
+    </script>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        .sl-code-viewer {
+          background: #fafafa;
+          color: black;
+          filter: invert(1);
+        }
+      }
+    </style>
+    <!-- above code block is for dark mode remove if want them white -->
+  </head>
+  <body>
+    <elements-api
+      layout="responsive"
+      apiDescriptionUrl="/swagger.json"
+      router="hash"
+      ></elements-api>
+    </body>
+    </html>
