@@ -3,6 +3,8 @@ const sync_rm = require("./helper/sync_rm");
 const sync_rm_client_mapping = require("./helper/sync_rm_client_mapping");
 const sync_trades = require("./helper/sync_trades");
 
+const { emit } = require("../socket");
+
 let running = true;
 
 process.on("SIGINT", () => {
@@ -22,6 +24,12 @@ async function demon() {
       await sync_rm();
 
       await sync_rm_client_mapping();
+
+      // Emit event for realtime updates
+      emit("data:updated", {
+        resources: ["clients", "trades", "rms", "incentives"],
+        sync_time: new Date().toISOString(),
+      });
     } catch (error) {
       console.error("Error syncing BSE data", error.message);
     }

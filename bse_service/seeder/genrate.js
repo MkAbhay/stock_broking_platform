@@ -160,6 +160,7 @@ for (let i = 1; i <= 20; i++) {
     name: `${first} ${last}`,
     email: `${first.toLowerCase()}.${last.toLowerCase()}${i}@company.com`,
     phone: `9${Math.floor(100000000 + Math.random() * 900000000)}`,
+    role: "employee",
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
   });
@@ -197,7 +198,7 @@ fs.writeFileSync(
   JSON.stringify(rmClientMappings, null, 2),
 );
 
-console.log("✅ Generated:");
+console.log("Generated:");
 console.log("   - clients.json (300 clients)");
 console.log("   - trades.json (5000 trades)");
 console.log("   - rm.json (20 relationship managers)");

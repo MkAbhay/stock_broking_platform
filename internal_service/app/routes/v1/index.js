@@ -5,6 +5,8 @@ const getEmployees = require("../../controllers/employee");
 const getIncentive = require("../../controllers/incentive");
 const getIncentiveById = require("../../controllers/incentiveById");
 
+const login = require("../../controllers/auth");
+
 module.exports = (router) => {
   router.get("/clients/:employee_code", getClientsById);
   router.get("/clients", getClients);
@@ -12,6 +14,8 @@ module.exports = (router) => {
   router.get("/employees", getEmployees);
   router.get("/incentive/:employee_code", getIncentiveById);
   router.get("/incentive", getIncentive);
+
+  router.post("/login", login);
 };
 
 /**
@@ -639,4 +643,28 @@ module.exports = (router) => {
  *
  *       '500':
  *         description: Internal server error
+ */
+
+/**
+ * @swagger
+ * /v1/login:
+ *   post:
+ *     summary: Login
+ *     description: |
+ *       Logs in a Relationship Manager and returns authentication token.
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               employee_code:
+ *                 type: string
+ *                 example: RM0001
+ *     responses:
+ *       '200':
+ *         description: Login successful
+ *         content:
  */

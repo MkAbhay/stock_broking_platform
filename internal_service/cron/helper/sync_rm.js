@@ -19,9 +19,10 @@ const sync_rm = async () => {
       name: rm.name,
       email: rm.email,
       phone: rm.phone,
+      role: rm.role,
     }));
     await rm.bulkCreate(records, {
-      updateOnDuplicate: ["name", "email", "phone"],
+      updateOnDuplicate: ["name", "email", "phone", "role"],
     });
     logger.info("rm data synced to database");
   }

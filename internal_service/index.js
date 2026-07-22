@@ -67,8 +67,14 @@ demon();
 
 // start server
 const PORT = process.env.PORT;
+
+const http = require("http");
+const server = http.createServer(app);
+const { initialize } = require("./socket");
+initialize(server);
+
 logger.info(`Starting server on port ${PORT}...`);
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   logger.info(`Server running on port ${PORT}`);
 });
 
