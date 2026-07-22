@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "employee_code": "RM0001",
+    "name": "Rahul Patel",
+    "email": "rahul.patel1@company.com",
+    "phone": "9624683725",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 2,
+    "employee_code": "RM0002",
+    "name": "Krishna Verma",
+    "email": "krishna.verma2@company.com",
+    "phone": "9636865286",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 3,
+    "employee_code": "RM0003",
+    "name": "Aditya Patel",
+    "email": "aditya.patel3@company.com",
+    "phone": "9273570810",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 4,
+    "employee_code": "RM0004",
+    "name": "Karan Gupta",
+    "email": "karan.gupta4@company.com",
+    "phone": "9378833139",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 5,
+    "employee_code": "RM0005",
+    "name": "Ritika Singh",
+    "email": "ritika.singh5@company.com",
+    "phone": "9608130273",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 6,
+    "employee_code": "RM0006",
+    "name": "Rahul Sharma",
+    "email": "rahul.sharma6@company.com",
+    "phone": "9816522691",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 7,
+    "employee_code": "RM0007",
+    "name": "Neha Nair",
+    "email": "neha.nair7@company.com",
+    "phone": "9870702129",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 8,
+    "employee_code": "RM0008",
+    "name": "Amit Kapoor",
+    "email": "amit.kapoor8@company.com",
+    "phone": "9161748193",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 9,
+    "employee_code": "RM0009",
+    "name": "Karan Reddy",
+    "email": "karan.reddy9@company.com",
+    "phone": "9446922379",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 10,
+    "employee_code": "RM0010",
+    "name": "Pooja Agarwal",
+    "email": "pooja.agarwal10@company.com",
+    "phone": "9321554955",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 11,
+    "employee_code": "RM0011",
+    "name": "Ritika Iyer",
+    "email": "ritika.iyer11@company.com",
+    "phone": "9848176484",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 12,
+    "employee_code": "RM0012",
+    "name": "Pooja Sharma",
+    "email": "pooja.sharma12@company.com",
+    "phone": "9445889073",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 13,
+    "employee_code": "RM0013",
+    "name": "Vivaan Kapoor",
+    "email": "vivaan.kapoor13@company.com",
+    "phone": "9819307116",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 14,
+    "employee_code": "RM0014",
+    "name": "Rohan Kapoor",
+    "email": "rohan.kapoor14@company.com",
+    "phone": "9563002947",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 15,
+    "employee_code": "RM0015",
+    "name": "Meera Desai",
+    "email": "meera.desai15@company.com",
+    "phone": "9381890950",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 16,
+    "employee_code": "RM0016",
+    "name": "Karan Jain",
+    "email": "karan.jain16@company.com",
+    "phone": "9216024657",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 17,
+    "employee_code": "RM0017",
+    "name": "Ananya Mehta",
+    "email": "ananya.mehta17@company.com",
+    "phone": "9104706288",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 18,
+    "employee_code": "RM0018",
+    "name": "Vikram Chopra",
+    "email": "vikram.chopra18@company.com",
+    "phone": "9929892901",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 19,
+    "employee_code": "RM0019",
+    "name": "Pooja Nair",
+    "email": "pooja.nair19@company.com",
+    "phone": "9812085477",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  },
+  {
+    "id": 20,
+    "employee_code": "RM0020",
+    "name": "Arjun Desai",
+    "email": "arjun.desai20@company.com",
+    "phone": "9218349751",
+    "created_at": "2026-07-22T01:20:59.331Z",
+    "updated_at": "2026-07-22T01:20:59.331Z"
+  }
+]

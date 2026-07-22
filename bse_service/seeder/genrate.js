@@ -144,13 +144,61 @@ for (let i = 1; i <= 5000; i++) {
   });
 }
 
+const rms = [];
+const rmClientMappings = [];
+
+/**
+ * Generate RMs
+ */
+for (let i = 1; i <= 20; i++) {
+  const first = random(FIRST_NAMES);
+  const last = random(LAST_NAMES);
+
+  rms.push({
+    id: i,
+    employee_code: `RM${String(i).padStart(4, "0")}`,
+    name: `${first} ${last}`,
+    email: `${first.toLowerCase()}.${last.toLowerCase()}${i}@company.com`,
+    phone: `9${Math.floor(100000000 + Math.random() * 900000000)}`,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  });
+}
+
+/**
+ * Generate RM <-> Client Mapping
+ * Every client belongs to one RM
+ */
+let mappingId = 1;
+
+for (const client of clients) {
+  const rm = random(rms);
+
+  rmClientMappings.push({
+    id: mappingId++,
+    client_id: client.id,
+    rm_id: rm.id,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  });
+}
+
 /**
  * Write files
  */
-fs.writeFileSync("./clients.json", JSON.stringify(clients, null, 2));
+fs.writeFileSync("./seeder/clients.json", JSON.stringify(clients, null, 2));
 
-fs.writeFileSync("./trades.json", JSON.stringify(trades, null, 2));
+fs.writeFileSync("./seeder/trades.json", JSON.stringify(trades, null, 2));
+
+fs.writeFileSync("./seeder/rm.json", JSON.stringify(rms, null, 2));
+
+fs.writeFileSync(
+  "./seeder/rm_client_mapping.json",
+  JSON.stringify(rmClientMappings, null, 2),
+);
 
 console.log("✅ Generated:");
 console.log("   - clients.json (300 clients)");
 console.log("   - trades.json (5000 trades)");
+console.log("   - rm.json (20 relationship managers)");
+console.log("   - rm_client_mapping.json (300 mappings)");
