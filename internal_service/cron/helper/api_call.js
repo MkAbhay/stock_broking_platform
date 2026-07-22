@@ -32,7 +32,41 @@ const getTradesBse = async (last_date) => {
   return response.data;
 };
 
+const getRmBse = async () => {
+  const url = `${process.env.BSE_URL}/employees`;
+
+  const response = await axios.get(
+    url,
+    {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    },
+    //   { timeout: 30000 },
+  );
+
+  return response.data;
+};
+
+const getRmClientMappingBse = async () => {
+  const url = `${process.env.BSE_URL}/rm_client_mapping`;
+
+  const response = await axios.get(
+    url,
+    {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    },
+    //   { timeout: 30000 },
+  );
+
+  return response.data;
+};
+
 module.exports = {
   getClientsBse,
   getTradesBse,
+  getRmBse,
+  getRmClientMappingBse,
 };

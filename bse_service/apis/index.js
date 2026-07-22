@@ -14,7 +14,7 @@ module.exports = {
  *     description: |
  *       Fetches all clients available in the mock BSE feed.
  *       Returns client details including client code, name, PAN, email, and phone.
- *     tags: [Clients]
+ *     tags: [mock-bse]
  *     responses:
  *       '200':
  *         description: Clients fetched successfully
@@ -74,7 +74,7 @@ module.exports = {
  *       Supports pagination using page and limit parameters.
  *       API may simulate delay and random failures based on configuration.
  *
- *     tags: [Trades]
+ *     tags: [mock-bse]
  *
  *     parameters:
  *       - in: query
@@ -195,7 +195,7 @@ module.exports = {
  * /employees:
  *   get:
  *     tags:
- *       - Employees
+ *       - mock-bse
  *     summary: Get all employees
  *     description: Returns the list of all relationship managers (employees).
  *     produces:
@@ -247,7 +247,7 @@ module.exports = {
  * /rm_client_mapping:
  *   get:
  *     tags:
- *       - RM Client Mapping
+ *       - mock-bse
  *     summary: Get RM-Client mappings
  *     description: Returns the mapping between relationship managers and their assigned clients.
  *     produces:

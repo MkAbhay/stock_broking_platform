@@ -1,4 +1,6 @@
 const sync_client = require("./helper/sync_client");
+const sync_rm = require("./helper/sync_rm");
+const sync_rm_client_mapping = require("./helper/sync_rm_client_mapping");
 const sync_trades = require("./helper/sync_trades");
 
 let running = true;
@@ -16,10 +18,14 @@ async function demon() {
       await sync_client();
 
       await sync_trades();
+
+      await sync_rm();
+
+      await sync_rm_client_mapping();
     } catch (error) {
       console.error("Error syncing BSE data", error.message);
     }
-    await sleep(10000); // wait 10 seconds
+    await sleep(30 * 60 * 1000); // sleep for 30 minutes
   }
 }
 

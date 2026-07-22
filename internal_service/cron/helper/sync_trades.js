@@ -23,7 +23,7 @@ const sync_trades = async () => {
       symbol: trade.symbol,
       quantity: trade.quantity,
       price: trade.price,
-      brokerage: trade.brokerage,
+      brokerage: trade.quantity * trade.price * 0.02, // 2% brokerage
     }));
     await trades.bulkCreate(records, {
       updateOnDuplicate: [
