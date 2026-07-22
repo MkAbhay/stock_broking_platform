@@ -5,6 +5,8 @@ const { swaggerSpec } = require("./swaggerConfig");
 const path = require("path");
 
 const clients_data = require("./seeder/clients.json");
+const rm_data = require("./seeder/rm.json");
+const rm_client_mapping_data = require("./seeder/rm_client_mapping.json");
 const { trades } = require("./apis");
 
 dotenv.config();
@@ -31,6 +33,18 @@ app.get("/api/health", (req, res) => {
 // apis for client
 app.get("/api/clients", async (req, res) => {
   return res.status(200).json({ status: true, code: 200, data: clients_data });
+});
+
+// apis for employee
+app.get("/api/employees", async (req, res) => {
+  return res.status(200).json({ status: true, code: 200, data: rm_data });
+});
+
+// apis for rm_client_mapping
+app.get("/api/rm_client_mapping", async (req, res) => {
+  return res
+    .status(200)
+    .json({ status: true, code: 200, data: rm_client_mapping_data });
 });
 
 // apis for trades

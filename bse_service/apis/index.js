@@ -189,3 +189,101 @@ module.exports = {
  *                   type: string
  *                   example: Internal Server Error
  */
+
+/**
+ * @swagger
+ * /employees:
+ *   get:
+ *     tags:
+ *       - Employees
+ *     summary: Get all employees
+ *     description: Returns the list of all relationship managers (employees).
+ *     produces:
+ *       - application/json
+ *     responses:
+ *       200:
+ *         description: Employees fetched successfully
+ *         schema:
+ *           type: object
+ *           properties:
+ *             status:
+ *               type: boolean
+ *               example: true
+ *             code:
+ *               type: integer
+ *               example: 200
+ *             data:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   id:
+ *                     type: integer
+ *                     example: 1
+ *                   employee_code:
+ *                     type: string
+ *                     example: RM0001
+ *                   name:
+ *                     type: string
+ *                     example: Rahul Patel
+ *                   email:
+ *                     type: string
+ *                     example: rahul.patel1@company.com
+ *                   phone:
+ *                     type: string
+ *                     example: "9624683725"
+ *                   created_at:
+ *                     type: string
+ *                     format: date-time
+ *                     example: "2026-07-22T01:20:59.331Z"
+ *                   updated_at:
+ *                     type: string
+ *                     format: date-time
+ *                     example: "2026-07-22T01:20:59.331Z"
+ */
+
+/**
+ * @swagger
+ * /rm_client_mapping:
+ *   get:
+ *     tags:
+ *       - RM Client Mapping
+ *     summary: Get RM-Client mappings
+ *     description: Returns the mapping between relationship managers and their assigned clients.
+ *     produces:
+ *       - application/json
+ *     responses:
+ *       200:
+ *         description: RM Client mappings fetched successfully
+ *         schema:
+ *           type: object
+ *           properties:
+ *             status:
+ *               type: boolean
+ *               example: true
+ *             code:
+ *               type: integer
+ *               example: 200
+ *             data:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   id:
+ *                     type: integer
+ *                     example: 1
+ *                   client_id:
+ *                     type: integer
+ *                     example: 1
+ *                   rm_id:
+ *                     type: integer
+ *                     example: 14
+ *                   created_at:
+ *                     type: string
+ *                     format: date-time
+ *                     example: "2026-07-22T01:20:59.331Z"
+ *                   updated_at:
+ *                     type: string
+ *                     format: date-time
+ *                     example: "2026-07-22T01:20:59.331Z"
+ */
