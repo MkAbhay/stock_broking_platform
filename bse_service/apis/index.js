@@ -103,25 +103,6 @@ module.exports = {
  *           format: date
  *         example: 2025-12-31
  *
- *       - in: query
- *         name: page
- *         required: false
- *         description: Page number
- *         schema:
- *           type: integer
- *           default: 1
- *         example: 1
- *
- *       - in: query
- *         name: limit
- *         required: false
- *         description: Number of records per page
- *         schema:
- *           type: integer
- *           default: 100
- *         example: 100
- *
- *
  *     responses:
  *
  *       '200':
@@ -189,35 +170,6 @@ module.exports = {
  *                       updated_at:
  *                         type: string
  *                         format: date-time
- *
- *
- *                 pagination:
- *                   type: object
- *                   properties:
- *
- *                     page:
- *                       type: integer
- *                       example: 1
- *
- *                     limit:
- *                       type: integer
- *                       example: 100
- *
- *                     totalRecords:
- *                       type: integer
- *                       example: 5000
- *
- *                     totalPages:
- *                       type: integer
- *                       example: 50
- *
- *                     hasNextPage:
- *                       type: boolean
- *                       example: true
- *
- *                     hasPreviousPage:
- *                       type: boolean
- *                       example: false
  *
  *
  *       '500':
