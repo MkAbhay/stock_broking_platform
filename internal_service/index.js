@@ -60,8 +60,13 @@ try {
   }
 })();
 
-const PORT = process.env.PORT;
+// setup cron job for syncing bse clients and trades
+logger.info("Starting cron job...");
+const { demon } = require("./cron/job");
+demon();
 
+// start server
+const PORT = process.env.PORT;
 logger.info(`Starting server on port ${PORT}...`);
 app.listen(PORT, () => {
   logger.info(`Server running on port ${PORT}`);
