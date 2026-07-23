@@ -367,25 +367,25 @@ http://localhost:4000/login
 
 ## Login
 
-![Login](./screenshots/login.png)
+<img width="1912" height="1022" alt="login" src="https://github.com/user-attachments/assets/a7f12511-4d9c-4664-927d-56259b78a955" />
 
 ---
 
 ## Clients
 
-![Clients](./screenshots/clients.png)
+<img width="1917" height="1026" alt="clients" src="https://github.com/user-attachments/assets/5c6b116b-f725-4cec-b2c0-a457ad89e68c" />
 
 ---
 
 ## Trades
 
-![Trades](./screenshots/trades.png)
+<img width="1912" height="1027" alt="trades" src="https://github.com/user-attachments/assets/83d8ace6-91bc-4e1b-996c-6fb5e9c2e4e3" />
 
 ---
 
 ## Incentives
 
-![Incentives](./screenshots/incentives.png)
+<img width="1917" height="1026" alt="incentives" src="https://github.com/user-attachments/assets/6b48093e-f265-4535-b1cc-e92a8c26b56e" />
 
 ---
 
