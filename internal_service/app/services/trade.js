@@ -78,11 +78,15 @@ const getIncentive = async (query) => {
     const page = Math.max(parseInt(query.page) || 1, 1);
     const limit = Math.max(parseInt(query.limit) || 10, 1);
     const offset = (page - 1) * limit;
+    const sort = query.sort || "id";
+    const order = query.order?.toUpperCase() === "DESC" ? "DESC" : "ASC";
 
     const replacements = {
       searchText: `%${searchText}%`,
       limit,
       offset,
+      sort,
+      order,
     };
 
     const countQuery = `
@@ -120,7 +124,7 @@ const getIncentive = async (query) => {
             OR rm.name LIKE :searchText
             OR rm.employee_code LIKE :searchText)
         GROUP BY rm.id
-        ORDER BY rm.id ASC
+        ORDER BY :sort :order
         LIMIT :limit OFFSET :offset;
     `;
 

@@ -21,16 +21,16 @@ const menus = [
     href: "/trades",
   },
   {
+    title: "Incentives",
+    href: "/incentives",
+  },
+  {
     title: "Employees",
     href: "/employees",
   },
   {
     title: "My Clients",
     href: "/my-clients",
-  },
-  {
-    title: "Incentives",
-    href: "/incentives",
   },
 ];
 

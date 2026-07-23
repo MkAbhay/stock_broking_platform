@@ -485,6 +485,21 @@ module.exports = (router) => {
  *         description: Search by RM name or employee code
  *         example: RM0001
  *
+ *       - in: query
+ *         name: sort
+ *         schema:
+ *           type: string
+ *           example: employee_code
+ *         description: Sort field
+ *
+ *       - in: query
+ *         name: order
+ *         schema:
+ *           type: string
+ *           enum: [ASC, DESC]
+ *           default: ASC
+ *         description: Sort order
+ *
  *     responses:
  *       '200':
  *         description: Incentive data fetched successfully

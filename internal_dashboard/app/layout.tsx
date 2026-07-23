@@ -5,7 +5,6 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import ThemeProviderClient from "@/components/ThemeProviderClient";
 
 import QueryProvider from "@/providers/QueryProvider";
-import DashboardLayout from "@/components/DashboardLayout";
 
 export const metadata: Metadata = {
   title: "Internal Dashboard",
@@ -22,11 +21,7 @@ export default function RootLayout({
       <body>
         <AppRouterCacheProvider>
           <ThemeProviderClient>
-            <QueryProvider>
-                <DashboardLayout>
-                  {children}
-                </DashboardLayout>
-            </QueryProvider>
+            <QueryProvider>{children}</QueryProvider>
           </ThemeProviderClient>
         </AppRouterCacheProvider>
       </body>
